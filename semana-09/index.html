@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição no Workshop de Desenvolvimento Mobile</title>
+</head>
+<body>
+<div class="form-card">
+    <h1>📱 Inscrição no Workshop de Desenvolvimento Mobile</h1>
+    <div class="subhead">Preencha os dados para garantir sua vaga · todas as informações são protegidas</div>
+
+    
+ <!-- ========== FORMULÁRIO ========== -->
+    <!-- NENHUM JavaScript é usado para recuperar ou exibir valores. -->
+    <form onsubmit="return false;"></form>
+        <!-- 1. Nome completo (text) + required -->
+        <div class="field-group">
+            <label for="nomeCompleto">
+                <i>👤</i> Nome completo <span class="required-star">*</span>
+            </label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" 
+                   placeholder="Seu nome e sobrenome" 
+                   required aria-required="true">
+        </div>
+
+          <!-- 2. E-mail (email) + required -->
+        <div class="field-group">
+            <label for="email">
+                <i>📧</i> E-mail <span class="required-star">*</span>
+            </label>
+            <input type="email" id="email" name="email" 
+                   placeholder="voce@exemplo.com" 
+                   required aria-required="true">
+        </div>
+
+        <!-- 3. Senha (password) + required -->
+        <div class="field-group">
+            <label for="senha">
+                <i>🔒</i> Senha de acesso <span class="required-star">*</span>
+            </label>
+            <input type="password" id="senha" name="senha" 
+                   placeholder="Mínimo 6 caracteres" 
+                   required aria-required="true" minlength="6">
+            <span class="hint">Use ao menos 6 caracteres</span>
+        </div>
+
+         <!-- 4. Idade (number) + required -->
+        <div class="field-group">
+            <label for="idade">
+                <i>📅</i> Idade <span class="required-star">*</span>
+            </label>
+            <input type="number" id="idade" name="idade" 
+                   placeholder="Ex: 25" min="12" max="99" 
+                   required aria-required="true">
+        </div>
+
+         <!-- 5. Data de nascimento (date) + required -->
+        <div class="field-group">
+            <label for="dataNasc">
+                <i>🎂</i> Data de nascimento <span class="required-star">*</span>
+            </label>
+            <input type="date" id="dataNasc" name="dataNasc" 
+                   required aria-required="true">
+        </div>
+
+        <!-- 6. Nível de conhecimento (radio) + required -->
+        <div class="field-group">
+            <label for="nivelContainer">
+                <i>📊</i> Nível de conhecimento em programação <span class="required-star">*</span>
+            </label>
+            <div id="nivelContainer" class="inline-options" role="radiogroup">
+                <label>
+                    <input type="radio" name="nivel" value="iniciante" required> Iniciante
+                </label>
+                <label>
+                    <input type="radio" name="nivel" value="intermediario"> Intermediário
+                </label>
+                <label>
+                    <input type="radio" name="nivel" value="avancado"> Avançado
+                </label>
+                <label>
+                    <input type="radio" name="nivel" value="mentor"> Mentor
+                </label>
+            </div>
+        </div>
+
+        <!-- 7. Temas de interesse (checkbox) -->
+        <div class="field-group">
+            <label><i>🧩</i> Temas de interesse (você pode escolher vários)</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="temas" value="react-native"> React Native</label>
+                <label><input type="checkbox" name="temas" value="flutter"> Flutter</label>
+                <label><input type="checkbox" name="temas" value="kotlin"> Kotlin</label>
+                <label><input type="checkbox" name="temas" value="swift"> Swift</label>
+                <label><input type="checkbox" name="temas" value="arquitetura"> Arquitetura Mobile</label>
+            </div>
+        </div>
+
+        <!-- 8. Select (linha do workshop) + required -->
+        <div class="field-group">
+            <label for="trilha">
+                <i>🛤️</i> Linha do Workshop <span class="required-star">*</span>
+            </label>
+            <select id="trilha" name="trilha" required aria-required="true">
+                <option value="" disabled selected>— Selecione uma trilha —</option>
+                <option value="android">Android Nativo (Kotlin)</option>
+                <option value="ios">iOS Nativo (Swift)</option>
+                <option value="react-native">React Native (Híbrido)</option>
+                <option value="flutter">Flutter (Multiplataforma)</option>
+                <option value="arquitetura">Arquitetura e Padrões</option>
+            </select>
+        </div>
+
+        <!-- 9. Textarea: apresentação pessoal / observações -->
+        <div class="field-group">
+            <label for="apresentacao">
+                <i>✍️</i> Apresentação pessoal ou observações
+            </label>
+            <textarea id="apresentacao" name="apresentacao" 
+                      placeholder="Conte um pouco sobre sua experiência, expectativas ou observações…"></textarea>
+        </div>
+
+        <!-- 10. Botão submit -->
+        <div class="submit-wrapper">
+            <input type="submit" value="📩 Inscrever-se">
+        </div>
+
+        <!-- (Nenhum código JavaScript para recuperar ou exibir valores) -->
+    </form>
+    <!-- ===== FIM DO FORMULÁRIO ===== -->
+
+    <div style="margin-top: 1.8rem; font-size: 0.75rem; color: #3f6f89; text-align: center; border-top: 1px solid #d5e0e9; padding-top: 1.2rem; opacity: 0.7;">
+        <span>✔️ Campos com <span class="required-star" style="color:#c93a3a;">*</span> são obrigatórios · Nenhuma informação é armazenada nesta etapa.</span>
+    </div>
+</div>
+
+</body>
+</html>
+
+    
+
+
+
+
+
+
+
+   <form id="form-credenciamento">
+           <label for="nome">Nome completo:</label>
+           <input type="text" id="nome" name="nome" required>
+
+           <label for="email">E-mail:</label>
+           <input type="email" id="email" name="email" required>
+
+           <label for="senha">Senha</label>
+           <input type="password" id="senha" name = "senha" required>
+
+           <label for="idade">Idade</label>
+           <input type="number" id="idade" name="idade" required>
+
+           <label for="nascimento">Data de Nascimento</label>
+           <input type="date" id="nascimento" name="nascimento" required>
+
+           <label for="trilha">Trilha de interesse</label>
+           <input type="text" id="trilha" name="trilha" required>
+
+         
+       <select id="trilha" name="trilha">
+           <option value="">Selecione...</option>
+           <option value="frontend">Desenvolvimento Front-end</option>
+           <option value="backend">Desenvolvimento Back-end</option>
+           <option value="mobile">Desenvolvimento Mobile</option>
+           <option value="dados">Dados e Inteligência Artificial</option>
+       </select>
+
+
+           
+
+           
+          
+
+           
+    
+
+           
+           
+           
+
+
+           
+    
+
+
+
+
+
+
+

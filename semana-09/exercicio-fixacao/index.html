@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Fixação: createElement vs innerHTML</title>
+</head>
+
+<body>
+    <main>
+        <h1>Inscrição no Workshop de Desenvolvimento Mobile</h1>
+        <p>Último exercício da semana: o formulário já existe no HTML. O JavaScript vai criar o que ainda não está na
+            página.</p>
+
+        <section class="enunciado">
+            <h2>O que você vai decidir</h2>
+            <p>O maior erro desta semana é usar a ferramenta errada na hora de criar elemento. Use esta regra:</p>
+            <ul>
+                <li><strong>createElement</strong> — o elemento precisa nascer no JavaScript: vem de um array, vai
+                    receber clique, ou você precisa guardar a referência para usar depois.</li>
+                <li><strong>innerHTML</strong> — um container já existe e você só quer preencher o visual (títulos e
+                    parágrafos). Cuidado: ele apaga tudo que estava dentro.</li>
+                <li><strong>textContent</strong> — só texto, sem tag HTML.</li>
+            </ul>
+            <ol>
+                <li>Preencha o <code>&lt;select&gt;</code> das trilhas a partir do array, com
+                    <code>createElement</code>.
+                </li>
+                <li>Crie a seção de resumo com <code>createElement</code> — ela não existe neste HTML.</li>
+                <li>No <code>submit</code>, recupere os dados com <code>new FormData(formulario)</code>:
+                    <code>.get()</code> para campo único e <code>.getAll()</code> para os temas. Depois monte o resumo
+                    com <code>innerHTML</code>.
+                </li>
+                <li>O botão <strong>Fazer nova inscrição</strong> deve nascer com <code>createElement</code> e
+                    <code>addEventListener</code>. Não coloque esse botão dentro do <code>innerHTML</code>.
+                </li>
+            </ol>
+        </section>
+
+        <form id="form">
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="age">Idade</label>
+            <input type="number" id="age" name="idade" required min="1" max="120">
+
+            <label for="nascimento">Data de nascimento</label>
+            <input type="date" id="nascimento" name="nascimento" required>
+
+            <label for="trilha">Trilha de interesse</label>
+            <select id="trilha" name="trilha" required>
+                <option value="">Selecione uma trilha</option>
+            </select>
+
+            <fieldset>
+                <legend>Nível de Conhecimento em Programação</legend>
+                <label>
+                    <input type="radio" name="nivel" value="iniciante" required>
+                    Iniciante
+                </label>
+                <label>
+                    <input type="radio" name="nivel" value="intermediario">
+                    Intermediário
+                </label>
+                <label>
+                    <input type="radio" name="nivel" value="avancado">
+                    Avançado
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Temas de interesse</legend>
+                <label>
+                    <input type="checkbox" name="temas" value="interfaces">
+                    Criação de interfaces
+                </label>
+                <label>
+                    <input type="checkbox" name="temas" value="componentes">
+                    Componentes
+                </label>
+                <label>
+                    <input type="checkbox" name="temas" value="navegacao">
+                    Navegação
+                </label>
+            </fieldset>
+
+            <label for="apresentacao">Apresentação pessoal</label>
+            <textarea id="apresentacao" name="apresentacao" rows="5"
+                placeholder="Conte um pouco sobre você..."></textarea>
+
+            <button type="submit">Enviar inscrição</button>
+        </form>
+    </main>
+</body>
+
+</html>

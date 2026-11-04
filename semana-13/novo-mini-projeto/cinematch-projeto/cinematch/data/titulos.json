@@ -1,0 +1,14 @@
+[
+  { "id": 1, "titulo": "Órbita Silenciosa", "tipo": "Filme", "ano": 2024, "generos": ["Ficção Científica", "Drama"], "classificacao": 12, "sinopse": "Uma astronauta presa em uma estação espacial precisa decidir quem salvar quando os sistemas começam a falhar." },
+  { "id": 2, "titulo": "Risadas de Domingo", "tipo": "Série", "ano": 2022, "generos": ["Comédia", "Família"], "classificacao": 0, "sinopse": "As confusões de uma família grande e barulhenta tentando organizar um almoço de domingo perfeito." },
+  { "id": 3, "titulo": "Sangue Frio", "tipo": "Filme", "ano": 2023, "generos": ["Terror", "Suspense"], "classificacao": 18, "sinopse": "Um grupo de amigos descobre que a cabana isolada onde estão hospedados guarda um segredo antigo e violento." },
+  { "id": 4, "titulo": "Coração de Papel", "tipo": "Filme", "ano": 2021, "generos": ["Romance", "Drama"], "classificacao": 14, "sinopse": "Dois escritores rivais trocam cartas anônimas e, sem saber, se apaixonam pelas palavras um do outro." },
+  { "id": 5, "titulo": "Reino de Ferro", "tipo": "Série", "ano": 2025, "generos": ["Fantasia", "Aventura"], "classificacao": 14, "sinopse": "Uma jovem ferreira descobre que pode forjar armas capazes de selar portais entre mundos." },
+  { "id": 6, "titulo": "Investigação 42", "tipo": "Série", "ano": 2020, "generos": ["Suspense", "Crime"], "classificacao": 16, "sinopse": "Uma detetive teimosa reabre um caso arquivado há vinte anos e encontra mais do que esperava." },
+  { "id": 7, "titulo": "Pequenos Exploradores", "tipo": "Filme", "ano": 2019, "generos": ["Família", "Aventura"], "classificacao": 0, "sinopse": "Três irmãos embarcam em uma caça ao tesouro no quintal de casa que os leva mais longe do que imaginavam." },
+  { "id": 8, "titulo": "Neon City", "tipo": "Filme", "ano": 2024, "generos": ["Ficção Científica", "Ação"], "classificacao": 16, "sinopse": "Em uma metrópole controlada por corporações, um entregador descobre um segredo que pode mudar tudo." },
+  { "id": 9, "titulo": "A Última Colheita", "tipo": "Filme", "ano": 2022, "generos": ["Drama"], "classificacao": 12, "sinopse": "Um fazendeiro enfrenta a seca e o afastamento do filho na última safra antes de vender a terra da família." },
+  { "id": 10, "titulo": "Gargalhada Geral", "tipo": "Série", "ano": 2023, "generos": ["Comédia"], "classificacao": 12, "sinopse": "Um grupo de comediantes de stand-up tenta sobreviver aos bastidores caóticos de um clube de comédia." },
+  { "id": 11, "titulo": "Sussurros na Névoa", "tipo": "Série", "ano": 2021, "generos": ["Terror", "Fantasia"], "classificacao": 16, "sinopse": "Uma vila cercada de névoa permanente esconde criaturas que só aparecem para quem acredita nelas." },
+  { "id": 12, "titulo": "Corrida Contra o Tempo", "tipo": "Filme", "ano": 2025, "generos": ["Ação", "Aventura"], "classificacao": 12, "sinopse": "Uma piloto de resgate tem 24 horas para atravessar um país em colapso e salvar sua equipe." }
+]

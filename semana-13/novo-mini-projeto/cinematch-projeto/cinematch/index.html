@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CineMatch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="cabecalho">
+  <h1>🎬 CineMatch</h1>
+  <p>Filmes e séries que combinam com você</p>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h2>Meu perfil</h2>
+    <div id="perfil">
+      <p><strong>Nome:</strong> <span id="nome-usuario">Não informado</span></p>
+      <p><strong>Idade:</strong> <span id="idade-usuario">Não informado</span></p>
+      <p><strong>Gêneros favoritos:</strong> <span id="generos-usuario">Não informado</span></p>
+    </div>
+
+    <div id="form-perfil" style="margin-top:1rem; display:none;">
+      <div class="form-linha">
+        <label for="input-nome">Nome</label>
+        <input type="text" id="input-nome" placeholder="Como podemos te chamar?">
+      </div>
+      <div class="form-linha">
+        <label for="input-idade">Idade</label>
+        <input type="number" id="input-idade" min="0" max="120" placeholder="Sua idade">
+      </div>
+      <div class="form-linha">
+        <label>Gêneros favoritos (toque para marcar)</label>
+        <div class="generos-grid" id="grid-generos"></div>
+      </div>
+      <button class="primario" id="btn-salvar-perfil">Salvar perfil</button>
+    </div>
+
+    <button class="btn-mini" id="btn-editar-perfil" style="margin-top:0.8rem;">Editar perfil</button>
+  </section>
+
+  <section class="card">
+    <h2>Menu</h2>
+    <div class="menu">
+      <button id="btn-catalogo">🎞️ Catálogo</button>
+      <button id="btn-buscar">🔎 Buscar conteúdo</button>
+      <button id="btn-compatibilidade">❤️ Compatibilidade</button>
+      <button id="btn-recomendacao">⭐ Melhor recomendação</button>
+      <button id="btn-titulos">📋 Listar títulos</button>
+      <button id="btn-idade">🔞 Conteúdos permitidos</button>
+    </div>
+  </section>
+
+  <section class="card" id="secao-busca" style="display:none;">
+    <h2>Buscar conteúdo</h2>
+    <div class="busca">
+      <input type="text" id="campo-busca" placeholder="Digite o título...">
+      <button class="primario" id="btn-pesquisar">Pesquisar</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Resultado</h2>
+    <div id="resultado">
+      <p class="vazio">Escolha uma opção no menu para começar.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <p>🎬 CineMatch © 2026</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

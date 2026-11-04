@@ -1,0 +1,748 @@
+
+/* =====================================================
+   1. CONFIGURAÇÃO GERAL
+   ===================================================== */
+
+/*
+   O * significa TODOS os elementos HTML.
+
+   Aqui estamos zerando as margens e espaçamentos
+   que o navegador coloca automaticamente.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+    /*
+       Faz com que padding e border sejam incluídos
+       dentro da largura/altura do elemento.
+    */
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   2. BODY
+   ===================================================== */
+
+body {
+
+    /* Fonte principal da página */
+    font-family: Arial, sans-serif;
+
+    /* Cor de fundo */
+    background-color: #f4f1ea;
+
+    /* Cor padrão dos textos */
+    color: #243038;
+}
+
+
+/* =====================================================
+   3. LINKS
+   ===================================================== */
+
+a {
+
+    /* Remove o sublinhado padrão dos links */
+    text-decoration: none;
+
+    /* Usa a cor do elemento pai */
+    color: inherit;
+}
+
+
+/* =====================================================
+   4. IMAGENS RESPONSIVAS
+   ===================================================== */
+
+img {
+
+    /*
+       A imagem nunca poderá ser maior que
+       o espaço disponível.
+       
+       Isso ajuda a página a funcionar no celular.
+    */
+    max-width: 100%;
+
+    /*
+       Mantém a proporção original da imagem.
+    */
+    height: auto;
+}
+
+
+/* =====================================================
+   =====================================================
+   MOBILE — REGRAS PADRÃO
+   =====================================================
+   
+   IMPORTANTE:
+
+   Tudo que está acima e abaixo desta parte
+   funciona normalmente em telas menores.
+
+   Portanto, aqui estamos pensando primeiro
+   em telas de celular.
+   
+   Exemplo:
+   
+   375px → MOBILE
+   500px → MOBILE
+   768px → ainda usa estas regras
+   1024px → ainda usa estas regras
+   
+   A mudança para o desktop acontecerá mais abaixo,
+   dentro da @media.
+   =====================================================
+   ===================================================== */
+
+
+/* =====================================================
+   5. CABEÇALHO
+   ===================================================== */
+
+.topo {
+
+    /* Ocupa toda a largura disponível */
+    width: 100%;
+
+    /* Cor de fundo */
+    background-color: #1b3a4b;
+
+    /* Cor do texto */
+    color: #f4f1ea;
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /*
+       No MOBILE, os elementos ficam
+       um embaixo do outro.
+    */
+    flex-direction: column;
+
+    /* Centraliza os elementos */
+    align-items: center;
+
+    /* Espaçamento interno */
+    padding: 20px;
+
+    /* Espaço entre os elementos */
+    gap: 15px;
+}
+
+
+/* Nome da empresa */
+
+.marca {
+    font-size: 22px;
+}
+
+
+/* Menu */
+
+.menu {
+
+    /* Ativa Flexbox */
+    display: flex;
+
+    /*
+       Se os links não couberem na mesma linha,
+       eles podem passar para a linha seguinte.
+    */
+    flex-wrap: wrap;
+
+    /* Centraliza os links */
+    justify-content: center;
+}
+
+
+/* Links do menu */
+
+.menu a {
+
+    font-size: 15px;
+
+    /* Espaçamento interno */
+    padding: 8px 12px;
+
+    color: #e6ddd0;
+}
+
+
+/*
+   :hover significa:
+
+   "quando o mouse estiver sobre o elemento".
+*/
+
+.menu a:hover {
+    color: #d4b45a;
+}
+
+
+/* =====================================================
+   6. BANNER / HERO
+   ===================================================== */
+
+.hero {
+
+    /* Ocupa toda a largura */
+    width: 100%;
+
+    background-color: #1b3a4b;
+}
+
+
+/* Imagem principal */
+
+.hero img {
+
+    /* Ocupa 100% da largura disponível */
+    width: 100%;
+
+    /* Mantém a proporção */
+    height: auto;
+}
+
+
+/* Texto do banner */
+
+.hero-texto {
+
+    width: 100%;
+
+    /*
+       30px em cima/baixo
+       20px nas laterais
+    */
+    padding: 30px 20px;
+
+    background-color: #1b3a4b;
+
+    color: #f7f3ea;
+}
+
+
+/* Pequeno texto acima do título */
+
+.selo {
+
+    font-size: 13px;
+
+    color: #d4b45a;
+
+    margin-bottom: 16px;
+}
+
+
+/* Título principal */
+
+.hero h1 {
+
+    /*
+       No MOBILE o título ocupa toda a largura.
+    */
+    width: 100%;
+
+    /*
+       Tamanho do título no MOBILE.
+    */
+    font-size: 28px;
+
+    margin-bottom: 18px;
+}
+
+
+/* Texto abaixo do título */
+
+.hero-resumo {
+
+    width: 100%;
+
+    font-size: 16px;
+
+    color: #d9d0c3;
+
+    margin-bottom: 28px;
+}
+
+
+/* Botão */
+
+.botao {
+
+    /*
+       Faz o link ocupar uma linha inteira.
+    */
+    display: block;
+
+    /* Centraliza o texto */
+    text-align: center;
+
+    background-color: #d4b45a;
+
+    color: #1b3a4b;
+
+    font-size: 16px;
+
+    /* Texto em negrito */
+    font-weight: bold;
+
+    padding: 14px 28px;
+}
+
+
+/* Efeito quando o mouse passa sobre o botão */
+
+.botao:hover {
+    background-color: #e2c56f;
+}
+
+
+/* =====================================================
+   7. SERVIÇOS
+   ===================================================== */
+
+.servicos {
+
+    width: 100%;
+
+    padding: 40px 20px;
+}
+
+
+/* Títulos das seções */
+
+.servicos h2,
+.sobre h2,
+.equipe h2 {
+
+    font-size: 26px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Lista de serviços */
+
+.servicos-lista {
+
+    display: flex;
+
+    /*
+       MOBILE:
+
+       Os cartões ficam um embaixo do outro.
+    */
+    flex-direction: column;
+
+    /* Espaço entre os cartões */
+    gap: 20px;
+}
+
+
+/* Cartão de serviço */
+
+.cartao {
+
+    /*
+       MOBILE:
+
+       Cada cartão ocupa toda a largura disponível.
+    */
+    width: 100%;
+
+    background-color: #ffffff;
+
+    padding: 24px;
+
+    /*
+       Linha dourada na parte superior.
+    */
+    border-top: 4px solid #d4b45a;
+}
+
+
+/* Título do cartão */
+
+.cartao h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Texto do cartão */
+
+.cartao p {
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   8. SOBRE
+   ===================================================== */
+
+.sobre {
+
+    width: 100%;
+
+    display: flex;
+
+    /*
+       MOBILE:
+
+       Texto e imagem ficam um embaixo do outro.
+    */
+    flex-direction: column;
+
+    padding: 40px 20px;
+
+    gap: 20px;
+}
+
+
+/* Texto da seção */
+
+.sobre-texto {
+    width: 100%;
+}
+
+
+/* Parágrafos */
+
+.sobre-texto p {
+
+    font-size: 16px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Foto */
+
+.sobre-foto {
+
+    width: 100%;
+
+    height: auto;
+}
+
+
+/* =====================================================
+   9. EQUIPE
+   ===================================================== */
+
+.equipe {
+
+    width: 100%;
+
+    padding: 40px 20px;
+}
+
+
+/* Lista da equipe */
+
+.equipe-lista {
+
+    display: flex;
+
+    /*
+       MOBILE:
+
+       Pessoas ficam uma embaixo da outra.
+    */
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* Cartão de cada pessoa */
+
+.pessoa {
+
+    /*
+       MOBILE:
+
+       Ocupa toda a largura disponível.
+    */
+    width: 100%;
+
+    background-color: #ffffff;
+
+    padding: 24px;
+
+    text-align: center;
+}
+
+
+/* Avatar */
+
+.avatar {
+
+    width: 72px;
+    height: 72px;
+
+    /*
+       Centraliza o avatar.
+    */
+    margin: 0 auto 16px;
+
+    background-color: #1b3a4b;
+
+    color: #d4b45a;
+
+    font-size: 20px;
+
+    padding-top: 24px;
+}
+
+
+/* Nome */
+
+.pessoa h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 6px;
+}
+
+
+/* Cargo */
+
+.pessoa p {
+
+    font-size: 14px;
+
+    color: #5a6a72;
+}
+
+
+/* =====================================================
+   10. RODAPÉ
+   ===================================================== */
+
+.rodape {
+
+    width: 100%;
+
+    background-color: #142833;
+
+    color: #d9d0c3;
+
+    padding: 30px 20px;
+
+    font-size: 14px;
+
+    text-align: center;
+}
+
+
+/* Marca dentro do rodapé */
+
+.rodape .marca {
+
+    color: #f4f1ea;
+
+    margin-bottom: 8px;
+}
+
+
+/* =====================================================
+   =====================================================
+   AQUI COMEÇA A RESPONSIVIDADE PARA DESKTOP
+   =====================================================
+   
+   @media = regra que depende do tamanho da tela.
+
+   min-width: 1440px significa:
+
+   "Se a tela tiver 1440px OU MAIS,
+   aplique estas regras."
+
+   Portanto:
+
+   375px  → MOBILE
+   768px  → MOBILE
+   1024px → MOBILE
+   1439px → MOBILE
+
+   1440px → DESKTOP
+   1600px → DESKTOP
+   1920px → DESKTOP
+
+   ATENÇÃO:
+
+   O CSS anterior NÃO desaparece.
+
+   As regras anteriores continuam valendo.
+
+   Porém, quando existe uma regra aqui para
+   a mesma propriedade, esta regra passa a
+   substituir a anterior.
+   =====================================================
+   ===================================================== */
+
+@media (min-width: 1440px) {
+
+
+    /* =================================================
+       DESKTOP — largura máxima do conteúdo
+       ================================================= */
+
+    .topo,
+    .servicos,
+    .sobre,
+    .equipe,
+    .rodape {
+
+        /*
+           No desktop, o conteúdo não fica gigante
+           ocupando uma tela de 1920px inteira.
+
+           Ele terá no máximo 1280px.
+        */
+        max-width: 1280px;
+
+        /*
+           Centraliza o conteúdo horizontalmente.
+
+           0 = margem em cima/baixo
+           auto = centraliza esquerda/direita
+        */
+        margin: 0 auto;
+    }
+
+
+    /* =================================================
+       DESKTOP — texto do banner
+       ================================================= */
+
+    .hero-texto {
+
+        /*
+           No desktop, o texto poderá ter
+           até 1400px de largura.
+        */
+        max-width: 1400px;
+
+        /* Centraliza */
+        margin: 0 auto;
+
+        /* Mais espaço interno no desktop */
+        padding: 48px 56px;
+    }
+
+
+    /* =================================================
+       DESKTOP — título maior
+       ================================================= */
+
+    .hero h1 {
+
+        /*
+           MOBILE:
+
+           width: 100%;
+        */
+
+        /*
+           DESKTOP:
+
+           O título fica limitado a 820px.
+        */
+        width: 820px;
+
+        /*
+           MOBILE = 28px
+
+           DESKTOP = 42px
+        */
+        font-size: 42px;
+    }
+
+
+    /* =================================================
+       DESKTOP — resumo
+       ================================================= */
+
+    .hero-resumo {
+
+        /*
+           MOBILE = 100%
+
+           DESKTOP = 640px
+        */
+        width: 640px;
+
+        /*
+           MOBILE = 16px
+
+           DESKTOP = 18px
+        */
+        font-size: 18px;
+    }
+
+
+    /* =================================================
+       DESKTOP — cartões de serviços
+       ================================================= */
+
+    .cartao {
+
+        /*
+           MOBILE:
+
+           width: 100%;
+        */
+
+        /*
+           DESKTOP:
+
+           Cada cartão terá 360px.
+        */
+        width: 360px;
+    }
+
+
+    /* =================================================
+       DESKTOP — pessoas da equipe
+       ================================================= */
+
+    .pessoa {
+
+        /*
+           MOBILE:
+
+           width: 100%;
+        */
+
+        /*
+           DESKTOP:
+
+           Cada cartão terá 280px.
+        */
+        width: 280px;
+    }
+
+}
+
+
+/* =====================================================
+   FIM DA MEDIA QUERY
+   =====================================================
+
+   Quando a tela tiver menos de 1440px,
+   as regras específicas de desktop acima
+   não serão aplicadas.
+
+   Quando tiver 1440px ou mais,
+   elas serão aplicadas.
+   ===================================================== */
+

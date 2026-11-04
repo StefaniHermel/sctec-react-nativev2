@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de clamp()</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <p class="selo">Semana 10 · gabarito visual</p>
+    <h1>O título usa clamp()</h1>
+    <p class="intro">Redimensione a janela. O texto e a caixa mudam de tamanho, mas nunca passam do mínimo nem do máximo.</p>
+  </header>
+
+  <section class="formula">
+    <p>font-size: clamp(<span class="min">24px</span>, <span class="pref">5vw</span>, <span class="max">64px</span>);</p>
+    <ul>
+      <li><span class="min">24px</span> — menor tamanho (celular)</li>
+      <li><span class="pref">5vw</span> — tamanho preferido (acompanha a tela)</li>
+      <li><span class="max">64px</span> — maior tamanho (monitor grande)</li>
+    </ul>
+  </section>
+
+  <section class="demo">
+    <article>
+      <h2>Sem clamp</h2>
+      <p class="sem-clamp">Este texto tem 5vw. Em tela estreita fica pequeno demais; em tela larga, enorme.</p>
+    </article>
+    <article>
+      <h2>Com clamp</h2>
+      <p class="com-clamp">Este texto tem clamp(16px, 5vw, 32px). Cresce com a tela, mas para no 16 e no 32.</p>
+    </article>
+  </section>
+
+  <section class="caixa-wrap">
+    <h2>Caixa com largura em clamp()</h2>
+    <div class="caixa">
+      width: clamp(220px, 50%, 600px)
+    </div>
+  </section>
+</body>
+
+</html>

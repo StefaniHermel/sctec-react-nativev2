@@ -1,0 +1,311 @@
+
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111827;
+    color: #f3f4f6;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+   ===================================================== */
+
+.cabecalho {
+    min-height: 180px;
+    padding: 35px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(
+        135deg,
+        #111827,
+        #312e81
+    );
+}
+
+.cabecalho h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.cabecalho p {
+    color: #d1d5db;
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   LOGO
+   ===================================================== */
+
+.logo {
+    width: 80px;
+    height: 80px;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #7c3aed;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/* =====================================================
+   CONTAINER PRINCIPAL
+   ===================================================== */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 30px auto;
+}
+
+
+/* =====================================================
+   BOAS-VINDAS
+   ===================================================== */
+
+.boas-vindas {
+    margin-bottom: 25px;
+}
+
+.boas-vindas h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.boas-vindas p {
+    color: #cbd5e1;
+}
+
+
+/* =====================================================
+   CARDS
+   ===================================================== */
+
+.card {
+    background: #1f2937;
+
+    border: 1px solid #374151;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.18);
+}
+
+.card h2 {
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   PERFIL
+   ===================================================== */
+
+.perfil {
+    display: grid;
+    gap: 8px;
+}
+
+.perfil span {
+    color: #c4b5fd;
+}
+
+
+/* =====================================================
+   MENU
+   ===================================================== */
+
+.menu {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+
+/* =====================================================
+   BOTÕES
+   ===================================================== */
+
+button {
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 14px 16px;
+
+    background: #7c3aed;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+
+    background: #6d28d9;
+}
+
+
+/* =====================================================
+   BUSCA
+   ===================================================== */
+
+.busca {
+    display: flex;
+
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+
+    padding: 14px;
+
+    border: 1px solid #4b5563;
+
+    border-radius: 10px;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #a78bfa;
+}
+
+
+/* =====================================================
+   CONTEÚDO DO CATÁLOGO
+   ===================================================== */
+
+.conteudo {
+    background: #111827;
+
+    border: 1px solid #374151;
+
+    border-radius: 14px;
+
+    padding: 18px;
+
+    margin-bottom: 15px;
+}
+
+.conteudo h3 {
+    color: #c4b5fd;
+
+    margin-bottom: 10px;
+}
+
+.conteudo p {
+    margin: 5px 0;
+
+    color: #d1d5db;
+}
+
+.conteudo strong {
+    color: white;
+}
+
+
+/* =====================================================
+   LISTA DE TÍTULOS
+   ===================================================== */
+
+#resultado ul {
+    padding-left: 25px;
+}
+
+#resultado li {
+    margin: 8px 0;
+}
+
+
+/* =====================================================
+   RODAPÉ
+   ===================================================== */
+
+.rodape {
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+
+    background: #0f172a;
+
+    color: #9ca3af;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+   ===================================================== */
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+        padding: 30px 5%;
+    }
+
+    .cabecalho h1 {
+        font-size: 32px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+    }
+
+    .busca {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+}
+

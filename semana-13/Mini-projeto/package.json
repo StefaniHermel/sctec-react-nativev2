@@ -1,0 +1,12 @@
+{
+  "name": "mini-projeto",
+  "version": "1.0.0",
+  "description": "Mini projeto CineMatch",
+  "main": "cinematch.js",
+  "scripts": {
+    "start": "node cinematch.js"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

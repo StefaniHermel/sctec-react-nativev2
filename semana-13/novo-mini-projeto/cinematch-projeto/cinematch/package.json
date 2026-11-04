@@ -1,0 +1,15 @@
+{
+  "name": "cinematch",
+  "version": "1.0.0",
+  "description": "App interativo de recomendação de filmes e séries",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -p 8080 -c-1"
+  },
+  "keywords": ["cinematch", "javascript", "html", "css"],
+  "author": "Estefânia Espírito Santo Hermel",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

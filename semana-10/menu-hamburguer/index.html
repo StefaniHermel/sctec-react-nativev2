@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar à tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu Hamburger</title>
+
+    <!-- Conecta o HTML ao arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonte Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MENU HAMBURGER -->
+    <div id="menu">
+
+        <!-- As três barras do menu -->
+        <div id="menu-bar" onclick="menuOnClick()">
+
+            <div id="bar1" class="bar"></div>
+
+            <div id="bar2" class="bar"></div>
+
+            <div id="bar3" class="bar"></div>
+
+        </div>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="nav" id="nav">
+
+            <ul>
+
+                <li>
+                    <a href="#">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">About</a>
+                </li>
+
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <!-- Fundo circular vermelho do menu -->
+    <div class="menu-bg" id="menu-bg"></div>
+
+
+    <!-- Conecta o HTML ao JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

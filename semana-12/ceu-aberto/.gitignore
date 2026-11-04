@@ -1,0 +1,5 @@
+# Arquivos que o Git deve ignorar
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

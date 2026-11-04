@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Atlas Comercial — Painel de vendas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app">
+    <aside class="menu-lateral">
+      <p class="marca">Atlas</p>
+      <nav>
+        <a class="ativo" href="#">Visão geral</a>
+        <a href="#">Pedidos</a>
+        <a href="#">Clientes</a>
+        <a href="#">Estoque</a>
+        <a href="#">Relatórios</a>
+        <a href="#">Equipe</a>
+        <a href="#">Configurações</a>
+      </nav>
+    </aside>
+
+    <div class="painel">
+      <header class="topo">
+        <h1>Painel de vendas</h1>
+        <p class="periodo">Agosto 2026 · filial Campinas</p>
+      </header>
+
+      <section class="indicadores">
+        <article class="kpi">
+          <p class="rotulo">Faturamento</p>
+          <p class="valor">R$ 184.320</p>
+          <p class="nota">+12% vs julho</p>
+        </article>
+        <article class="kpi">
+          <p class="rotulo">Pedidos</p>
+          <p class="valor">247</p>
+          <p class="nota">18 aguardando envio</p>
+        </article>
+        <article class="kpi">
+          <p class="rotulo">Ticket médio</p>
+          <p class="valor">R$ 746</p>
+          <p class="nota">acima da meta</p>
+        </article>
+        <article class="kpi">
+          <p class="rotulo">Cancelamentos</p>
+          <p class="valor">9</p>
+          <p class="nota">3,6% do total</p>
+        </article>
+      </section>
+
+      <section class="pedidos">
+        <h2>Pedidos recentes</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Pedido</th>
+              <th>Cliente</th>
+              <th>Produto</th>
+              <th>Qtd</th>
+              <th>Valor</th>
+              <th>Status</th>
+              <th>Cidade</th>
+              <th>Data</th>
+              <th>Pagamento</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#4821</td>
+              <td>Helena Prado</td>
+              <td>Kit escritório 4 peças</td>
+              <td>2</td>
+              <td>R$ 1.280,00</td>
+              <td>Pago</td>
+              <td>Campinas</td>
+              <td>30/08</td>
+              <td>Cartão 3x</td>
+              <td class="acoes">
+                <button type="button" class="btn-acao" title="Ver">V</button>
+                <button type="button" class="btn-acao" title="Editar">E</button>
+                <button type="button" class="btn-acao" title="Excluir">X</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#4820</td>
+              <td>Bruno Teixeira</td>
+              <td>Cadeira ergonômica Alta</td>
+              <td>1</td>
+              <td>R$ 1.890,00</td>
+              <td>Enviado</td>
+              <td>Jundiaí</td>
+              <td>30/08</td>
+              <td>Pix</td>
+              <td class="acoes">
+                <button type="button" class="btn-acao" title="Ver">V</button>
+                <button type="button" class="btn-acao" title="Editar">E</button>
+                <button type="button" class="btn-acao" title="Excluir">X</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#4819</td>
+              <td>Sofia Martins</td>
+              <td>Luminária de mesa LED</td>
+              <td>4</td>
+              <td>R$ 636,00</td>
+              <td>Pago</td>
+              <td>Valinhos</td>
+              <td>29/08</td>
+              <td>Boleto</td>
+              <td class="acoes">
+                <button type="button" class="btn-acao" title="Ver">V</button>
+                <button type="button" class="btn-acao" title="Editar">E</button>
+                <button type="button" class="btn-acao" title="Excluir">X</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#4818</td>
+              <td>Igor Nascimento</td>
+              <td>Monitor 27 polegadas</td>
+              <td>2</td>
+              <td>R$ 2.450,00</td>
+              <td>Aguardando</td>
+              <td>Paulínia</td>
+              <td>29/08</td>
+              <td>Cartão 10x</td>
+              <td class="acoes">
+                <button type="button" class="btn-acao" title="Ver">V</button>
+                <button type="button" class="btn-acao" title="Editar">E</button>
+                <button type="button" class="btn-acao" title="Excluir">X</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#4817</td>
+              <td>Carla Mendes</td>
+              <td>Teclado mecânico compacto</td>
+              <td>3</td>
+              <td>R$ 987,00</td>
+              <td>Enviado</td>
+              <td>Campinas</td>
+              <td>28/08</td>
+              <td>Pix</td>
+              <td class="acoes">
+                <button type="button" class="btn-acao" title="Ver">V</button>
+                <button type="button" class="btn-acao" title="Editar">E</button>
+                <button type="button" class="btn-acao" title="Excluir">X</button>
+              </td>
+            </tr>
+            <tr>
+              <td>#4816</td>
+              <td>Paulo Vieira</td>
+              <td>Headset com microfone</td>
+              <td>1</td>
+              <td>R$ 412,00</td>
+              <td>Cancelado</td>
+              <td>Sumaré</td>
+              <td>28/08</td>
+              <td>Cartão 1x</td>
+              <td class="acoes">
+                <button type="button" class="btn-acao" title="Ver">V</button>
+                <button type="button" class="btn-acao" title="Editar">E</button>
+                <button type="button" class="btn-acao" title="Excluir">X</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

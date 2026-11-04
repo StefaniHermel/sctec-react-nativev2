@@ -1,0 +1,17 @@
+{
+  "name": "modulos",
+  "version": "1.0.0",
+  "description": "Este exercício é **só Node**, no terminal. Não é o site do Céu Aberto.",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "slugify": "^1.6.9"
+  }
+}

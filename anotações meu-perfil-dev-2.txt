@@ -1,0 +1,9 @@
+Como cada tela se liga às outras
+Quem chama	Código	Resultado
+index.js	router.push("/recados")	abre recados.js por cima do início
+index.js	router.push("/habilidades/js")	abre [id].js com id = "js"
+[id].js	router.back()	volta uma tela
+[id].js	router.dismissAll()	volta direto ao início
+Dois exercícios para fixar
+No recados.js, mude [{ id: ..., texto }, ...recados] para [...recados, { id: ..., texto }] e veja a ordem dos recados se inverter.
+No data/habilidades.js, adicione uma habilidade nova (por exemplo Git, com id: "git"). Ela aparece na tela inicial e abre o detalhe sem você mexer em mais nenhum arquivo, e isso mostra a vantagem da rota dinâmica.

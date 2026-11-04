@@ -1,0 +1,5 @@
+git checkout main
+git merge feature/cine-web
+git push origin main
+
+para voltar para o main

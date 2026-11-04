@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f1ea;
+  color: #243038;
+  padding: 32px 16px 64px;
+}
+
+header {
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+.selo {
+  color: #b8953a;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: clamp(24px, 5vw, 64px);
+  margin-bottom: 12px;
+}
+
+.intro {
+  font-size: 18px;
+}
+
+.formula {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  background-color: #1b3a4b;
+  color: #f4f1ea;
+  padding: 24px;
+}
+
+.formula p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.formula li {
+  margin-left: 20px;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.min {
+  color: #7dd3fc;
+}
+
+.pref {
+  color: #fde68a;
+}
+
+.max {
+  color: #86efac;
+}
+
+.demo {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.demo article {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.sem-clamp {
+  font-size: 5vw;
+}
+
+.com-clamp {
+  font-size: clamp(16px, 5vw, 32px);
+}
+
+.caixa-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.caixa {
+  width: clamp(220px, 50%, 600px);
+  background-color: #d4b45a;
+  color: #1b3a4b;
+  font-weight: bold;
+  text-align: center;
+  padding: 32px 16px;
+  margin-top: 12px;
+}
+
+@media (max-width: 600px) {
+  .demo {
+    flex-direction: column;
+  }
+
+  .demo article {
+    width: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+  
+    
+    header {
+        background-color: #29422d;
+        color: white;
+        height: 70px;
+
+        display : flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 60px;
+    }
+
+
+
+h1 {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+    
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li {
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+main {
+    padding: 50px  80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    gap: 30px;
+}
+
+section {
+    width: 280px;
+    height: 180px;
+
+    border: 1px solid #29422d;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ 
+h2 {
+   
+ font-size: 12px;
+   
+ font-weight: normal;
+ margin-top: 10px;
+}
+
+footer {
+    background-color: #29422d;
+    color: white;
+
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 10px;
+}

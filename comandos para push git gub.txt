@@ -1,0 +1,8 @@
+git add .
+git commit -m "Descreva o que mudou"
+git push
+
+quando o prof atualizar:
+
+git pull upstream main
+git push

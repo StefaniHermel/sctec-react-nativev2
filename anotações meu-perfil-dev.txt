@@ -1,0 +1,11 @@
+Resumo dos conceitos para revisar
+Conceito	Onde aparece no código
+State (useState)	curtidas, disponivel, mostrarHabilidades
+Props	<Cabecalho foto={foto} nome={nome} />
+Renderização condicional	curtidas > 0 && (...), ternário ? :
+Listas com .map() e key	As habilidades
+Navegação	router.push("/recados") e /habilidades/${item.id}
+Rotas dinâmicas	[id].js recebe o id da habilidade tocada
+Estilos	StyleSheet.create com flexbox
+
+meu-perfil-dev
